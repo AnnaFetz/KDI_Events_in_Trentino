@@ -1,0 +1,39 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b3763370-a59d-48f6-ba5f-197702505ee7>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en-GB " ;
+        schema:contactType        "author" ;
+        schema:email              "annamaria.fetz@studenti.unitn.it" , "lucia.hrovatin@studenti.unitn.it" ;
+        schema:name               "Anna Maria Fetz, Lucia Hrovatin" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Project/9d131d00-7433-466d-89c0-2f731c26df12>
+        rdf:type           foaf:Project ;
+        dct:description    "Metadata regarding the inception sheet, in which at least five Competency Questions for persona and scenario are identified. This table reports their natural language formulations and the extrapolated and categorised concepts in: common, core and contextual." ;
+        dct:identifier     "inception_1" ;
+        dct:title          "Inception Sheet Metadata" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/b3763370-a59d-48f6-ba5f-197702505ee7> .
