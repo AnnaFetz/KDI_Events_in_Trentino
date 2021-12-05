@@ -1,0 +1,39 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Project/20711057-f838-41c4-8e15-073b87c1aa7c>
+        rdf:type           foaf:Project ;
+        dct:description    "The designed Entity-Relationship (ER) model exploits the Crow’s foot notation by displaying entities as boxes and relationships as lines between them. The relationship's cardinality is defined by the shape at the end of the lines: a ring for zero, a dash for one and crow's foot for many. The model structures the entities following a bottom-up approach (generalization): if a set of entities has some common properties, they are extracted and generalized to a higher-level entity. A non filled arrow is placed with the head touching the superclass object, while all sub-classes are linked to this arrow by a black line." ;
+        dct:identifier     "er_model" ;
+        dct:title          "Entity Relationship model " ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5c1718cb-99de-4cc3-b977-7992dd9d754a> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/5c1718cb-99de-4cc3-b977-7992dd9d754a>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "en-GB" ;
+        schema:contactType        "author" ;
+        schema:email              "annamaria.fetz@studenti.unitn.it" , "lucia.hrovatin@studenti.unitn.it" ;
+        schema:name               "Anna Maria Fetz, Lucia Hrovatin" .
