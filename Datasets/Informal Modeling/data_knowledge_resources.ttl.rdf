@@ -1,0 +1,817 @@
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/1b094a8d-fb58-4e63-83a4-00388ec3a609>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Listing containing all original language movies in Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_MOVIT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:title          "Mymovies - Movies in Trentino" ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/e3e9f93a-3a23-4069-b411-727eecf1e0d3> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21>
+        rdf:type         skos:Concept ;
+        skos:definition  "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the offers property. Repeated events may be structured as separate Event objects." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Event" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc>
+        rdf:type           schema:Organization ;
+        schema:identifier  "NYSE:EB" ;
+        schema:legalName   "Eventetirb" ;
+        schema:leiCode     "NYSE:EB" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf>
+        rdf:type       dct:Location ;
+        locn:geometry  "POLYGON((11.8487548828125 45.8880964002419,11.1676025390625 45.55060191033992,10.8380126953125 45.90338862522057,11.1566162109375 46.223552702209744,11.4422607421875 46.033202521409436,11.6729736328125 46.291917749913665,11.8487548828125 45.8880964002419))"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/956d399d-f52a-48b6-9fd5-dd4a815a9a43>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of all Health and wellness events withi Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYH" ;
+        dct:issued         "2021-11-20T18:03:19Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-Health&Wellness" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-wellnesshealth" ;
+        dcat:landingPage   "https://stayhappening.com/trento--health-wellness" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a0b7111f-5bc0-4ee6-a797-04087be816e0>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "Private" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Main Jetn's Eventbrite's web page with the event's description." ;
+        dct:identifier     "EV_JETN" ;
+        dct:language       "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "JETN - Eventbrite" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/af42423a-94a8-43b1-8e8f-57f5e235406a> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/aded13b6-cee4-47a4-903f-5fdec08b49d5> ;
+        dcat:keyword       "JETN " ;
+        dcat:landingPage   "https://www.eventbrite.it/o/jetn-junior-enterprise-trento-17127553458" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/ed6dd460-dd3a-4026-afe8-7d8de5c51339>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "0CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of parties within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYP" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title          "Stayhappening-Parties" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-parties" ;
+        dcat:landingPage   "https://stayhappening.com/trento--parties" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/ccb361ef-12f4-43cb-9d88-08cb90e33fb6>
+        rdf:type         dcat:Dataset ;
+        dct:description  "The ontology currently covers 768 classes which form a subsumption hierarchy and are described by 3000 different properties. The DBpedia Ontology currently contains about 4,233,000 instances" ;
+        dct:identifier   "KN_DBPD" ;
+        dct:title        "dbpedia.org" ;
+        dcat:keyword     "knowledge - dbpedia" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/a88e6ef4-bd83-4150-ab6d-aaaab99da5a7>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Listing of all movies projected in their original language" ;
+        dct:issued          "2000-01-25T15:16:04Z"^^xsd:dateTime ;
+        dct:language        "en-GB" , "it-IT" ;
+        dct:license         "CC0" ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53> ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Mymovies " ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/1b094a8d-fb58-4e63-83a4-00388ec3a609> ;
+        dcat:themeTaxonomy  "HTML"^^xsd:anyURI ;
+        foaf:homepage       "https://www.mymovies.it/cinema/trento/versione-originale/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c>
+        rdf:type         skos:Concept ;
+        skos:definition  "A review of an item - for example, of a restaurant, movie, or store." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Review" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>
+        rdf:type           schema:Organization ;
+        schema:identifier  "NASDAQ:TRIP" ;
+        schema:legalName   "TripAdvisor " ;
+        schema:leiCode     "NASDAQ:TRIP)" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "HTML" ;
+        dct:description  "Folder containing 4 CSV directly scraped from the respective Tripadvisor's homepages: Pedavena, MART, Castello del Buonconsiglio, Bookique. They have not been parsed but only filtered according html <div> classes. " ;
+        dct:format       "118 KB" ;
+        dct:identifier   "EV_TRIP0"^^xsd:anyURI ;
+        dct:issued       "2021-10-18T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/tree/main/TripAdvisor"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/e2b1ccbb-0b75-4e7d-839a-a9a32fa37cfa>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0 - CC BY" ;
+        dct:conformsTo     "REST/JSON" ;
+        dct:description    "Events within Trento's Municipality." ;
+        dct:identifier     "EV_OPENTN" ;
+        dct:issued         "2017-08-21T00:08:07Z"^^xsd:dateTime ;
+        dct:language       "de-DE" , "it-IT" , "en-GB" ;
+        dct:modified       "2015-04-10T00:08:10Z"^^xsd:dateTime ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Opendata-Trento" ;
+        dct:type           "JSON"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/73cbf27e-6a92-45d1-a4f4-fb056b4ded43> ;
+        dcat:keyword       "Opendata-Trento" ;
+        dcat:landingPage   "https://dati.trentino.it/dataset/eventi-del-comune-di-trento" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond." ;
+        dct:title        "schema.org" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/31ec0b9c-d83f-4369-a009-5969a429d9d7>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0\r\n" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing all Art events falling within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYA" ;
+        dct:issued         "2019-11-20T17:56:39Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-Art" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-Art" ;
+        dcat:landingPage   "https://stayhappening.com/trento--art" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>
+        rdf:type           schema:Organization ;
+        schema:identifier  " 05056400483" ;
+        schema:legalName   "My Movies" ;
+        schema:leiCode     " 05056400483" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a591a31a-7b81-4b17-8dd4-5227f22940e4>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "https://tripadvisor.mediaroom.com/in-terms-of-use" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Home page for Pedavena's reviews" ;
+        dct:identifier     "EV_TRIPP" ;
+        dct:language       "de-DE" , "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Tripadvisor - Pedavena" ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/73cbf27e-6a92-45d1-a4f4-fb056b4ded43> ;
+        dcat:keyword       "Tripadvisor-Pedavena" ;
+        dcat:landingPage   "https://www.tripadvisor.it/Restaurant_Review-g187861-d1128166-Reviews-Antica_Birreria_Pedavena-Trento_Province_of_Trento_Trentino_Alto_Adige.html" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c> ;
+        epos:annotation    "en-GB" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/21b9f5ae-b517-4bc5-890f-0017661a8e54>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "JSON/REST" ;
+        dct:description  "JSON file containing the wollowing kets: (\\created\\: timestamp), (\\date_in_series_pattern\\: bool), (\\description\\: str), (\\duration\\: iso), (\\fee\\: dictionary containing the following keys [(\\accepts\\: str),(\\amount\\: int),(\\currency\\: str),(\\description\\: str),(\\label\\: str), (\\required\\: bool)], (\\group\\: dictionary. Keys in \\group\\ dicrionary: [(\\country\\: str),(\\created\\: iso),( id\\: long), (\\join_mode\\: str),(\\lat\\: float),  (\\localized_location\\: str\\), (\\lon\\: float),(\\name\\: str),(\\region\\: str),(\\state\\: str),(\\timezone\\: str), (\\urlname\\: str), (\\who\\: str)], (\\how_to_find_us\\: str), (\\id\\: str), (\\is_online_event\\: bool), (\\link\\: str), (\\local_date\\: str), (\\local_time\\: str), (\\member_pay_fee\\: bool), (\\name\\: str),  (\\status\\: str), (\\time\\: long), (\\updated\\: timestamp), (\\utc_offset\\: long), (\\venue\\: dictionary. Keys in \\venue\\ dictionary: ((\\address_1\\: str),  (\\city\\: str), (\\country\\: str), (\\id\\: long), (\\lat\\: float), (\\localized_country_name\\: str),(\\lon\\: float),(\\name\\: str), (\\repinned\\: bool)), (\\visibility\\: \\public\\),(\\waitlist_count\\: int)." ;
+        dct:format       "JSON" ;
+        dct:identifier   "EV_MEETUP"^^xsd:anyURI ;
+        dct:issued       "2021-10-14T09:28:47Z"^^xsd:dateTime ;
+        dct:language     "it-IT" ;
+        dct:license      "OAuth2"^^xsd:anyURI ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/blob/main/meetup_data.json"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/af42423a-94a8-43b1-8e8f-57f5e235406a>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.jetn.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-01-01T16:04:09Z"^^xsd:dateTime ;
+        schema:startDate  "2019-01-01T16:04:09Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/cfcd2ddb-18c3-4168-8184-15702e9a8049>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.udutrento.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/1a1fa63a-16ae-4a57-94ac-c7e2775963e0>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.facebook.com/meetup/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/f65e1ce8-94c4-4b1e-8169-de40e1359c53>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "0CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of all Worksops within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYW" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-workshops" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-workshops" ;
+        dcat:landingPage   "https://stayhappening.com/trento--workshops" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/fb210e97-0cda-4905-ae26-df439465b655>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Eventbrite is a global self-service ticketing platform for live experiences that allows anyone to create, share, find and attend events that fuel their passions and enrich their lives. From music festivals, marathons, conferences, community rallies, and fundraisers, to gaming competitions and air guitar contests. Our mission is to bring the world together through live experiences." ;
+        dct:issued          "2006-01-25T14:19:22Z"^^xsd:dateTime ;
+        dct:language        "it-IT" , "en-GB" , "de-DE" ;
+        dct:license         "https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-terms-of-service?lg=en_US" ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:rights          "https://www.eventbrite.com/support/articles/en_US/Troubleshooting/eventbrite-privacy-policy?lg=en" ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Eventbrite" ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/a0b7111f-5bc0-4ee6-a797-04087be816e0> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/971e2097-2af9-47a0-8263-a5617f96bd46> ;
+        dcat:themeTaxonomy  "https://support.localist.com/eventbrite/"^^xsd:anyURI ;
+        foaf:homepage       "https://www.eventbrite.com/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website" ;
+        schema:email        "https://support.allevents.in/" ;
+        schema:name         "allevents" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/6676033e-6f81-4193-ba50-25ee93dc3654>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Main text: Check out what's happening all around Trento, TR. Search engine for events in different areas. One can filter by category, or keyword." ;
+        dct:issued          "2019-11-01T17:42:37Z"^^xsd:dateTime ;
+        dct:language        "ITA, ENG" ;
+        dct:license         "https://stayhappening.com/privacy.php" ;
+        dct:modified        "2021-11-20T17:42:36Z"^^xsd:dateTime ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:rights          "CC0\r\n" ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Stay Happening" ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/f65e1ce8-94c4-4b1e-8169-de40e1359c53> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/956d399d-f52a-48b6-9fd5-dd4a815a9a43> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/0bc89022-e039-4ac9-86bd-1a6e5b17dca5> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/ed6dd460-dd3a-4026-afe8-7d8de5c51339> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/eaf27dcc-057f-43e0-9e4c-54e97592d8a1> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/5ba24074-bfb7-4cfe-addd-fc6d735c4b78> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/7a4ce75b-c9cb-4213-a15f-d9a9c53c34c3> ;
+        dcat:themeTaxonomy  "HTML"^^xsd:anyURI ;
+        foaf:homepage       "https://stayhappening.com/trento" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/30103752-e0c1-4119-a0c2-20a6281bf91a>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Crushsite.it è un'agenda online di cultura, arte e spettacolo. Contiene eventi organizzati in Trentino-Alto Adige / le schede e i materiali promozionali di oltre novanta soggetti culturali regionali coinvolti nel progetto." ;
+        dct:issued          "2000-11-01T15:23:10Z"^^xsd:dateTime ;
+        dct:language        "it-IT" ;
+        dct:license         "art. 13 e 122 del D. Lgs 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:modified        "2000-10-01T15:23:09Z"^^xsd:dateTime ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:rights          "CC0\r\n" ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Crushsite" ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/76ab5acb-6b89-4f5e-bc63-46b020226289> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/631db3cd-c07c-47d8-a776-40d1b4514e99> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/d0de1645-ba63-427f-b335-c109951929cc> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/eaf27dcc-057f-43e0-9e4c-54e97592d8a1> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/fd72eda3-2ce3-4f46-ada8-38b32ab0e35c> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/6da5355e-d1ec-4e1e-9071-bfbe6ba5dbeb> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/668b8669-2c66-4934-9ded-d7c536622e6d> ;
+        dcat:themeTaxonomy  "HTML"^^xsd:anyURI ;
+        foaf:homepage       "https://www.crushsite.it/it/" ;
+        epos:resource       "https://www.crushsite.it/it/soggetti/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "ITA, ENG" ;
+        schema:contactType        "email" ;
+        schema:email              "info@crushsite.it" ;
+        schema:telephone          "0464/870777" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d4f0625d-74a6-468b-92d0-32a6cffca8b3>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "REST/API" ;
+        dct:description  "JSON file containing pairs of unique OMS and key words for each facility such as Bars, universities or Hostels. The file has not been uploaded yet due to parsing. " ;
+        dct:format       "4.14 KB" ;
+        dct:identifier   "EV_OPST0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/blob/main/accessibility_places.py"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/3b6849c0-5c94-49cd-83be-7701c2399c47>
+        rdf:type         dcat:Catalog ;
+        dct:description  "Tripadvisor is a travel guidance platform helping travelers to plan, book or take trips. It can be used to discover where to stay, what to do and where to eat based on guidance from those who have been there reviewing them." ;
+        dct:issued       "2000-02-25T13:37:22Z"^^xsd:dateTime ;
+        dct:language     "it-IT" , "de-DE" , "en-GB" ;
+        dct:license      "CC0" ;
+        dct:publisher    <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5> ;
+        dct:rights       "https://tripadvisor.mediaroom.com/us-terms-of-use" ;
+        dct:title        "TripAdvisor" ;
+        dcat:dataset     <https://www.epos-eu.org/epos-dcat-ap#Dataset/adb2555c-0c59-456f-a42b-3fffe8fbc49f> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/2a01ab40-bebf-4612-a1f7-3952f5f135aa> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/cafeac86-346b-4b60-8e52-4568fcd894e1> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/a591a31a-7b81-4b17-8dd4-5227f22940e4> ;
+        foaf:homepage    "https://www.tripadvisor.com/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/5ba24074-bfb7-4cfe-addd-fc6d735c4b78>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing all Food&Drink events in Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYF" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening -Food&Drink" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappning-fooddrink" ;
+        dcat:landingPage   "https://stayhappening.com/trento--food-drinks" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/eaf27dcc-057f-43e0-9e4c-54e97592d8a1>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:conformsTo     "W3C" ;
+        dct:created        "2000-11-20T16:25:33Z"^^xsd:dateTime ;
+        dct:description    "Listings of Workshops, Guided Tours and seminars within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_CRUSD" ;
+        dct:issued         "2000-11-20T16:25:33Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Didattica" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "crushsite-didattica" ;
+        dcat:landingPage   "https://www.crushsite.it/it/didattica/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/3f352163-5c61-4996-90a9-028356f9420e>
+        rdf:type         dcat:Dataset ;
+        dct:description  "Knowledge resource : Schema.org vocabulary can be used with many different encodings, including RDFa, Microdata and JSON-LD. These vocabularies cover entities, relationships between entities and actions, and can easily be extended through a well-documented extension model." ;
+        dct:identifier   "KN_SCHE" ;
+        dct:title        "schema.org" ;
+        dcat:keyword     "knowledge - schema" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/8d122b00-664a-4b90-a2bb-87b5ed9ca551>
+        rdf:type           schema:Organization ;
+        schema:identifier  "05599740965 " ;
+        schema:legalName   "Openstreetmap" ;
+        schema:leiCode     "05599740965 " .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/a190436e-acec-40e4-9cfd-0d3058fb8c34>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Meetup is a platform for finding and building local communities. Meetup brings people together in thousands of cities, with 52 million members across 193 countries. People use Meetup to meet new people, learn new things, find support, get out of their comfort zones, and pursue their passions, together." ;
+        dct:issued          "2002-11-24T09:02:02Z"^^xsd:dateTime ;
+        dct:language        "it-IT" , "en-GB" ;
+        dct:license         "https://help.meetup.com/hc/en-us/articles/360044422391-Privacy-Policy/?urlkey=help&topic=help&__topic_subdomain=1" ;
+        dct:modified        "2021-11-24T09:01:58Z"^^xsd:dateTime ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5> ;
+        dct:rights          "https://help.meetup.com/hc/en-us/articles/360044422391-Privacy-Policy/?urlkey=help&topic=help&__topic_subdomain=1" ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Meet-Up Platform" ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/2a092382-5b21-4066-a2fa-e7b3e655b347> ;
+        dcat:themeTaxonomy  "HTML"^^xsd:anyURI ;
+        foaf:homepage       "https://help.meetup.com/hc/en-us" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/cafeac86-346b-4b60-8e52-4568fcd894e1>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "https://tripadvisor.mediaroom.com/in-terms-of-use" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Home page of MART's reviews" ;
+        dct:identifier     "EV_TRIPM" ;
+        dct:language       "de-DE" , "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Tripadvisor - MART" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/73cbf27e-6a92-45d1-a4f4-fb056b4ded43> ;
+        dcat:keyword       "tripadvisor - mart" ;
+        dcat:landingPage   "https://www.tripadvisor.it/ShowUserReviews-g194889-d2054642-r140669078-Museo_di_Arte_Moderna_e_Contemporanea_di_Trento_e_Rovereto-Rovereto_Province_of_.html" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>
+        rdf:type           schema:Organization ;
+        schema:identifier  "U72900GJ2012PTC071758" ;
+        schema:legalName   "ALLEVENTS" ;
+        schema:leiCode     "U72900GJ2012PTC071758" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/76ab5acb-6b89-4f5e-bc63-46b020226289>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listings of dance shows, theater events and performing arts within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_CRUST" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Crushsite-Danza, teatro e performing art" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "crushsite-dance & performing arts" ;
+        dcat:landingPage   "https://www.crushsite.it/it/danza-teatro/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/aded13b6-cee4-47a4-903f-5fdec08b49d5>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "CSV" ;
+        dct:description  "Set of files containing JSON and CSV for the respective events: Quick Commerce, Climbing Gap (by JeTn) and Sales for an old UDU event. They have not been parsed. The main keys are:  (Nome evento:str), (ID evento: int),(ordine n. : long), (data ordine: str),(Quantità: str), (Tipologia biglietto:str),(N.sede:str),(Nome oganizzatore:str),(partecipante n.:str),(tipo acquirente:str),(Partiva IVA:str),(data partecipazione:str),(data check-in:str),(affiliat:str),(totale pagato:str),(stato partecipante:str),(metodo di consegna:str) " ;
+        dct:format       "112 KB" ;
+        dct:identifier   "EV_EVBT0" ;
+        dct:language     "it-IT" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/d0de1645-ba63-427f-b335-c109951929cc>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:conformsTo     "W3C" ;
+        dct:created        "2000-11-16T16:07:09Z"^^xsd:dateTime ;
+        dct:description    "Concerti e appuntamenti musicali in Trentino-Alto Adige" ;
+        dct:issued         "2000-10-01T16:07:09Z"^^xsd:dateTime ;
+        dct:language       "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Musica" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "Music_crushsite" ;
+        dcat:landingPage   "https://www.crushsite.it/it/musica/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "GET REQUEST" ;
+        dct:description  "Folder containing JSON files from scraped CSV files. CSV files contain HTML code. All JSON files contain the same keys, namely: (\\links\\: list),(\\schema\\: list), (\\duration_hours\\:str),(\\duration_days\\:str), (\\location\\:str),(\\name\\:str),(\\tags\\: list)" ;
+        dct:format       "105 KB" ;
+        dct:issued       "2021-10-15T17:51:38Z"^^xsd:dateTime ;
+        dct:language     "ITA, ENG" ;
+        dct:modified     "2021-11-20T17:51:38Z"^^xsd:dateTime ;
+        dct:rights       "0CC" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/tree/main/scraped_websites/STAY/JSON"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/971e2097-2af9-47a0-8263-a5617f96bd46>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "Private" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Main eventbrite web page of UDU Trento's events" ;
+        dct:identifier     "EV_UDUTN" ;
+        dct:language       "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Eventbrite - UDU Trento" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/cfcd2ddb-18c3-4168-8184-15702e9a8049> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/aded13b6-cee4-47a4-903f-5fdec08b49d5> ;
+        dcat:keyword       "Eventbrite - UDU" ;
+        dcat:landingPage   "https://www.eventbrite.it/o/udu-trento-34480172423" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "GET REQUEST" ;
+        dct:description  "Folder containing all recently scraped files from all event categories. Each file is a JSON file. It contains the following keys: (\\duration_days\\: str), (\\name\\:str),(\\location\\:str),(\\duration_hours\\:str),(\\info\\:str),(\\schema\\:str),(\\links\\: str),(\\description\\:str),(\\\\recurrency\\:str). These keys have been created from an original CSV file, containing HTML code. " ;
+        dct:format       "442 KB" ;
+        dct:issued       "2021-10-15T15:10:30Z"^^xsd:dateTime ;
+        dct:language     "ITA" ;
+        dct:license      "0CC" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/tree/main/scraped_websites/CRUSH/JSON/JSON_PARSED"^^xsd:anyURI ;
+        epos:annotation  "This folder will be further divided into event categories and merged with different distributions. " .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/adb2555c-0c59-456f-a42b-3fffe8fbc49f>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "https://tripadvisor.mediaroom.com/in-terms-of-use" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Home page of Bookique's reviews" ;
+        dct:identifier     "EV_TRIPB" ;
+        dct:language       "en-GB" , "it-IT" , "de-DE" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Tripadvisor - Bookique" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f> ;
+        dcat:keyword       "tripadvisor - bookique" ;
+        dcat:landingPage   "https://www.tripadvisor.com/Restaurant_Review-g187861-d10304321-Reviews-Bookique-Trento_Province_of_Trento_Trentino_Alto_Adige.html" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/9049563b-404f-4ae6-8f22-82d499512482>
+        rdf:type            dcat:Catalog ;
+        dct:description     "Main page of Trentino's Open Data." ;
+        dct:issued          "2015-01-01T23:51:26Z"^^xsd:dateTime ;
+        dct:language        "ITA, ENG, DEU" ;
+        dct:license         "CC0, CCBY\r\n" ;
+        dct:modified        "2020-02-01T23:51:25Z"^^xsd:dateTime ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00> ;
+        dct:rights          "CC0 - CC BY" ;
+        dct:spatial         <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:title           "Open Data Trentino" ;
+        dcat:dataset        <https://www.epos-eu.org/epos-dcat-ap#Dataset/e3ab2e1a-ad08-41d4-941f-a12a17cd8ab6> , <https://www.epos-eu.org/epos-dcat-ap#Dataset/e2b1ccbb-0b75-4e7d-839a-a9a32fa37cfa> ;
+        dcat:themeTaxonomy  "HTML"^^xsd:anyURI ;
+        foaf:homepage       "https://dati.trentino.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/2a092382-5b21-4066-a2fa-e7b3e655b347>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "OAuth 2" ;
+        dct:conformsTo     "JSON/REST" ;
+        dct:description    "Listings of suggested events within Trento area" ;
+        dct:identifier     "EV_MEETU" ;
+        dct:language       "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Meet-Up - Trento" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/1a1fa63a-16ae-4a57-94ac-c7e2775963e0> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/21b9f5ae-b517-4bc5-890f-0017661a8e54> ;
+        dcat:keyword       "Meetup-Trento Area" ;
+        dcat:landingPage   "https://www.meetup.com/it-IT/find/?location=it--tn--Trento&source=EVENTS" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b> ;
+        schema:identifier    "P.IVA 00337460224" ;
+        schema:legalName     "Provincia Autonoma di Trento" ;
+        schema:leiCode       "P.IVA 00337460224\r\n" ;
+        schema:url           "https://www.provincia.tn.it/#"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/73cbf27e-6a92-45d1-a4f4-fb056b4ded43>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "JSON/REST" ;
+        dct:description  "TRENTO: \\metadata\\: (event-id, int),(remoteId, str), (classIdentifier,str), (class, url -str), (ownerId, int), (ownerName, key(ita-IT, str)), (mainNodeId, int), (sectionIdentifier, str -  access mode), (stateIdentifiers, list of str), (published, str - first publication), (modified, str - last update), (languages, list of str), (name, str - event name), (parentNodes, int), (link, str - data url), \\data\\ : for each language a dictionary including (priority, str), (special, int), (titolo, str - event title),(short title, str - shorter event title), (abstract, str - introduction), (text, str - event description), (file, if not null contains keys((filename,str), (url, str))), (from_time, str - event start), (to_time, str - event end),(periodo_svolgimento, str - event starting time and (sometimes) address), (orario_svolgimento, str - event starting time), (durata, str (moslty null) - duration of the event), (gps, dict with keys((latitudine, float), (longitudine, float), (address, str))), (url, str - (if not null) url of event's official page), (email, str), (telefono, str - (if not null) phone of the organiser), (informazioni, str - further information), (costi, str - description of the costs), (image, dict with keys((filename, str - image name), (url, str - link to the picture), (alt, str), (mime_type, str - image format), (width, str), (height, str))), (tipo_eventi_manifestazoni, list of dict with keys((id, int), (remoteId, str), (classIdentifier, str), (class, str), (languages, list of str), (name, str), (link, str), (mainNodeId, str))), (iniziativa, list of dict - contains the information about the main event), (tipo_evento, list with references to the class definition of event for Comune di Trento), (materia, list of dict to classify the event within one category), (io_sono, list), (circoscrizione, list), (servizio_sul_territorio, list), (associazione, list always empty), (ente, list always empty), (progessivo, always null)" , "ROVERETO: Reference parsed json. Main keys: (immagine, str - picture), (url, str - url to the event page), (abstract_text, str - event description without html tags), (abstract, str, event description), (title, str - event title), (lon, str, gps coordinate for longitude), (lat, str, gps coordinate for latitude), (modifica, str, last update), (link, str, link of the event via API), (duration_days, list with starting date and end date as str), (duration_hours, str with starting hour and end hour), (weekday, str - day of the event), (indirizzo, str - address of the event's location) " ;
+        dct:format       "JSON" ;
+        dct:issued       "2021-10-22T00:19:39Z"^^xsd:dateTime ;
+        dct:language     "ITA; ENG; DEU" ;
+        dct:license      "CC BY" ;
+        dct:rights       "CC 0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/tree/main/OpenData"^^xsd:anyURI ;
+        dcat:mediaType   "JSON" ;
+        epos:annotation  "Three keys have been added from the original json: weeday, duration_days, and duration_hours for further data integration\t" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/0bc89022-e039-4ac9-86bd-1a6e5b17dca5>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "\r\nCC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of all music events falling within Trento's Municipality/Administrative Area" ;
+        dct:identifier     "EV_STAYM" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-Music" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-music" ;
+        dcat:landingPage   "https://stayhappening.com/trento--music" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        schema:identifier    "01815580228" ;
+        schema:legalName     "CrushSite" ;
+        schema:leiCode       "01815580228" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/668b8669-2c66-4934-9ded-d7c536622e6d>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listings of children and family activities in Trentino Alto-Adige " ;
+        dct:issued         "2000-11-20T16:39:52Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Crushsite-iniziative per bambini" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "crushsite-bambini" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/fd72eda3-2ce3-4f46-ada8-38b32ab0e35c>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs.196/2003 (\\codice privacy\\) - Regolamento UE 2016/679) " ;
+        dct:conformsTo     "W3C" ;
+        dct:created        "2000-11-20T16:30:12Z"^^xsd:dateTime ;
+        dct:description    "Listing of conferences, Forums and Folklore in Trentino Alto Adige" ;
+        dct:identifier     "EV_CRUSI" ;
+        dct:issued         "2000-11-20T16:30:12Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Crushsite-Incontr & Iniziative" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "crushsite-Incontri" ;
+        dcat:landingPage   "https://www.crushsite.it/it/incontri/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/e3ab2e1a-ad08-41d4-941f-a12a17cd8ab6>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0 - CC BY" ;
+        dct:conformsTo     "JSON/REST" ;
+        dct:description    "Events within Rovereto's Municipality, some are georeferenced. " ;
+        dct:identifier     "EV_OPENRV" ;
+        dct:issued         "2019-05-08T00:15:06Z"^^xsd:dateTime ;
+        dct:language       "en-GB" , "de-DE" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Opendata-Rovereto" ;
+        dct:type           "JSON"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/73cbf27e-6a92-45d1-a4f4-fb056b4ded43> ;
+        dcat:keyword       "Opendata-Rovereto" ;
+        dcat:landingPage   "https://dati.trentino.it/dataset/comune-di-rovereto-eventi" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/2a01ab40-bebf-4612-a1f7-3952f5f135aa>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "https://tripadvisor.mediaroom.com/us-terms-of-use, CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Home page for Buonconsiglio's Castle reviews" ;
+        dct:identifier     "EV_BOOKC" ;
+        dct:language       "it-IT" , "de-DE" , "en-EN" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Tripadvisor - Castello del Buonconsiglio" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f> ;
+        dcat:keyword       "tripadvisor-castello" ;
+        dcat:landingPage   "https://www.tripadvisor.com/Attraction_Review-g187861-d600982-Reviews-Castello_del_Buonconsiglio_Monumenti_e_Collezioni_Provinciali-Trento_Province_of_T.html" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/4baf115e-ca1d-4c97-9604-8dafb1fd08f2>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "List of all business events within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYB" ;
+        dct:language       "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-Business" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-business" ;
+        dcat:landingPage   "https://stayhappening.com/trento--business" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>
+        rdf:type           schema:Organization ;
+        schema:identifier  "NYSE:EB" ;
+        schema:legalName   "Eventbrite Inc." ;
+        schema:leiCode     "NYSE:EB" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/e3e9f93a-3a23-4069-b411-727eecf1e0d3>
+        rdf:type         dcat:Distribution ;
+        dct:description  "CSV containing scraped information regarding original language movies within Trento and Rovereto Areas" ;
+        dct:identifier   "EV_MOVI0" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project/blob/main/my-movies.csv"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/631db3cd-c07c-47d8-a776-40d1b4514e99>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\- Regolamento UE 2016/679)" ;
+        dct:conformsTo     "W3C" ;
+        dct:created        "2000-11-20T16:34:03Z"^^xsd:dateTime ;
+        dct:description    "Mostre ed esposizioni d'arte In Trentino e in Alto Adige" ;
+        dct:issued         "2000-11-20T16:34:03Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Mostre ed Esposizioni" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "Mostre_Crush" ;
+        dcat:landingPage   "https://www.crushsite.it/it/mostre/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/7a4ce75b-c9cb-4213-a15f-d9a9c53c34c3>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of all trips and hikes within Trento's Municipality/AdministrativeArea " ;
+        dct:identifier     "EV_STAYT" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening- Trips & Adventurous Activities" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-trips&adventures" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/b19c624e-c744-4b42-b2a4-558ddf245629>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Redirected pages connected to filters for accessiblity and University places such as Bars, Pubs, Universities, etc." ;
+        dct:identifier     "EV_OPSTD" ;
+        dct:title          "Openstreetmap - University life filter" ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/d4f0625d-74a6-468b-92d0-32a6cffca8b3> ;
+        dcat:keyword       "Openstreetmap - Accessibility" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/3cc15cb3-438b-4dbc-a356-4d305a34bc5b>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Listing of entertainment events within Trento's Municipality/AdministrativeArea" ;
+        dct:identifier     "EV_STAYE" ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Stayhappening-Entertainment" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/db6287bf-4190-4def-b3c4-af6f9b9169bb> ;
+        dcat:keyword       "stayhappening-entertainment" ;
+        dcat:landingPage   "https://stayhappening.com/trento--entertainment" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "telephone" ;
+        schema:telephone    "tel:0461495111-800903606" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  "https://www.facebook.com/meetup/" ;
+        schema:identifier    "NL 853606109B01" ;
+        schema:legalName     "Meetup Online" ;
+        schema:leiCode       "NL 853606109B01" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/6da5355e-d1ec-4e1e-9071-bfbe6ba5dbeb>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "art. 13 e 122 del D. Lgs. 196/2003 (\\codice privacy\\) - Regolamento UE 2016/679" ;
+        dct:conformsTo     "W3C" ;
+        dct:created        "2000-11-20T16:12:52Z"^^xsd:dateTime ;
+        dct:description    "Movies and Documentaries listings in Trentino" ;
+        dct:identifier     "EV_CRUSC" ;
+        dct:issued         "2000-11-20T16:12:52Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Crushsite-Cinema" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/a062ebcf-4e00-4e70-8b71-3159f3be5f7e> ;
+        dcat:keyword       "crushsite-music" ;
+        dcat:landingPage   "https://www.crushsite.it/it/cinema/" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Catalog/aba07321-ea7f-46b2-b459-b26dc1b54db5>
+        rdf:type         dcat:Catalog ;
+        dct:description  "CC0 World map" ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:license      "CC0, CC BY" ;
+        dct:publisher    <https://www.epos-eu.org/epos-dcat-ap#Organization/8d122b00-664a-4b90-a2bb-87b5ed9ca551> ;
+        dct:title        "Openstreetmap " ;
+        dcat:dataset     <https://www.epos-eu.org/epos-dcat-ap#Dataset/b19c624e-c744-4b42-b2a4-558ddf245629> ;
+        foaf:homepage    "https://www.openstreetmap.org/#map=9/46.0027/10.9534\r\n" .
