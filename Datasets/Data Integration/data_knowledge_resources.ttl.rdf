@@ -1,0 +1,646 @@
+
+@prefix :      <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix schema: <http://schema.org/> .
+@prefix spdx:  <http://spdx.org/rdf/terms#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix gsp:   <http://www.opengis.net/ont/geosparql#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix sh:    <http://www.w3.org/ns/shacl#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix locn:  <http://www.w3.org/ns/locn#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix epos:  <https://www.epos-eu.org/epos-dcat-ap#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix http:  <http://www.w3.org/2006/http#> .
+@prefix dash:  <http://datashapes.org/dash#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+<https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> 
+        rdf:type           schema:Organization ;
+        schema:identifier  "NYSE:EB" ;
+        schema:legalName   "Eventetirb" ;
+        schema:leiCode     "NYSE:EB" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21>
+        rdf:type         skos:Concept ;
+        skos:definition  "An event happening at a certain time and location, such as a concert, lecture, or festival. Repeated events may be structured as separate Event objects." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Event" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>
+        rdf:type           schema:Organization ;
+        schema:identifier  " 05056400483" ;
+        schema:legalName   "My Movies" ;
+        schema:leiCode     " 05056400483" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.facebook.com/meetup> ;
+        schema:identifier    "NL 853606109B01" ;
+        schema:legalName     "Meetup Online" ;
+        schema:leiCode       "NL 853606109B01" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>
+        rdf:type           schema:Organization ;
+        schema:identifier  "NYSE:EB" ;
+        schema:legalName   "Eventbrite Inc." ;
+        schema:leiCode     "NYSE:EB" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/f6d1f97c-01e7-4240-aad7-991660de941e>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227> ;
+        schema:identifier    "01815580228" ;
+        schema:legalName     "CrushSite" ;
+        schema:leiCode       "01815580228" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>
+        rdf:type           schema:Organization ;
+        schema:identifier  "U72900GJ2012PTC071758" ;
+        schema:legalName   "ALLEVENTS" ;
+        schema:leiCode     "U72900GJ2012PTC071758" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/9aaac03a-72c3-4fe3-a029-17256b5c9227>
+        rdf:type                  schema:ContactPoint ;
+        schema:availableLanguage  "ITA, ENG" ;
+        schema:contactType        "email" ;
+        schema:email              "info@crushsite.it" ;
+        schema:telephone          "0464/870777" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/af42423a-94a8-43b1-8e8f-57f5e235406a>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.jetn.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12>
+        rdf:type          dct:PeriodOfTime ;
+        schema:endDate    "2022-01-01T16:04:09Z"^^xsd:dateTime ;
+        schema:startDate  "2019-01-01T16:04:09Z"^^xsd:dateTime .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/cfcd2ddb-18c3-4168-8184-15702e9a8049>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.udutrento.it/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/1a1fa63a-16ae-4a57-94ac-c7e2775963e0>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website: https://www.facebook.com/meetup/" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/a37494a3-fe7a-4805-807a-9bb7765cbf34>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "website" ;
+        schema:email        "<https://support.allevents.in/>" ;
+        schema:name         "allevents" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf>
+        rdf:type       dct:Location ;
+        locn:geometry  "POLYGON((11.8487548828125 45.8880964002419,11.1676025390625 45.55060191033992,10.8380126953125 45.90338862522057,11.1566162109375 46.223552702209744,11.4422607421875 46.033202521409436,11.6729736328125 46.291917749913665,11.8487548828125 45.8880964002419))"^^gsp:wktLiteral .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/956d399d-f52a-48b6-9fd5-dd4a815a9a43>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all the files regarding events, divided by category and coming from different sources." ;
+        dct:identifier     "EV_ETN" ;
+        dct:issued         "2021-12-15T18:03:19Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>, <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>, <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> , <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>, <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Events in Trentino" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f>, <https://www.epos-eu.org/epos-dcat-ap#Distribution/644ec121-eb76-483e-9985-41f8dccdcd66>, <https://www.epos-eu.org/epos-dcat-ap#Distribution/76f63366-c26b-42c4-b255-87828fa76e79>, <https://www.epos-eu.org/epos-dcat-ap#Distribution/d02275b5-228d-404c-9d2b-3f1b369af751>, <https://www.epos-eu.org/epos-dcat-ap#Distribution/e6875af5-ba33-4db1-a1a6-06a4c14bbdf2>, <https://www.epos-eu.org/epos-dcat-ap#Distribution/dca2d266-7368-4f9d-9943-6e57d46b979e>;
+        dcat:keyword       "events-in-Trentino" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab49ff-4fef-412a-8fa6-3a501ef23a21> .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>
+	rdf:type            schema:ContactPoint ;
+        schema:contactType  "email"  ;
+        schema:email        "lucia.hrovatin@studenti.unitn.it";
+        schema:name         "Lucia Hrovatin" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>
+	rdf:type            schema:ContactPoint ;
+        schema:contactType  "email"  ;
+        schema:email        "annamaria.fetz@studenti.unitn.it";
+        schema:name         "Anna Maria Fetz" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the cultural event parsed from web pages. The fields considered are: has_eventID = unique identifier for an event (EV_ + title);  has_title = title of the event; has_mode = mode of the event (online, offline, blended); has_link = url to the main page of the event; has_targetAge = specification regarding the target age of an event (string); has_edition = integer value reporting the edition of an event;  has_festivalStatus = binary value being True if the event is a festival, False otherwise; has_language = language of the event reported according to ISO 891-1; has_start = string reporting the starting time (date and hour); has_end = string reporting the ending time (date and hour); has_recurrency = binary value being True if the event is recurrent, False otherwise; has_organizer = code linking to the organizer of the event; has_specialAnnouncements = information regarding Covid-19 restrictions; has_description = description of the event ; has_terminated = binary value being True if the event terminated, False otherwise; has_hashtag = list of key-words; has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise ; has_schedule = specification of the recurrence; has_transportMode = list of possible (public) transports to reach the event ; has_venue = code linking to the venue of the event; has_virtualLocation = code linking to the virtual location of the event; has_superEvent = code linking to the super event of the event ; has_originalLanguage = binary value being True if the event is in original language (e.g., movie), False otherwise; has_performer = code linking to the performer of the event (Organization or Person); has_subtitles = binary value being True if the event has subtitles (e.g., movie), False otherwise; has_guidedTour = binary value being True if the event is a guided tour, False otherwise; has_ticket = code linking to the ticket of the event ; has_Archive = code linking to the event’s record in archive; has_freeEntrance = binary value being True if the event is free, False otherwise." ;
+        dct:format       "325 KB";
+        dct:identifier   "EV_ETNCU"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/644ec121-eb76-483e-9985-41f8dccdcd66>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the education event parsed from web pages. The fields considered are:;has_eventID = unique identifier for an event (EV_ + title);has_title = title of the event;has_mode = mode of the event (online, offline, blended);has_link = url to the main page of the event;has_targetAge = specification regarding the target age of an event (string) ;has_edition = integer value reporting the edition of an event;has_festivalStatus = binary value being True if the event is a festival, False otherwise has_language = language of the event reported according to ISO 891-1;has_start = string reporting the starting time (date and hour);has_end = string reporting the ending time (date and hour); has_recurrency = binary value being True if the event is recurrent, False otherwise; has_organizer = code linking to the organizer of the event;has_specialAnnouncements = information regarding Covid-19 restrictions;has_description = description of the event;has_terminated = binary value being True if the event terminated, False otherwise has_hashtag = list of keywords;has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise;has_schedule = specification of the recurrence;has_transportMode = list of possible (public) transports to reach the event;has_venue = code linking to the venue of the event;has_virtualLocation = code linking to the virtual location of the event;has_superEvent = code linking to the super event of the event;has_topic = specific topic of the event;has_finalCertificate = binary value being True if the event offers a final certificate, False otherwise;has_speaker = code linking to the speaker of an event;has_seminarStatus = binary value being True if the event is a seminar, False otherwise;has_ECTS = binary value being True if the event offers ECTS, False otherwise; has_interaction = binary value being True if the event allows audience interaction, False otherwise; has_ticket = code linking to the ticket of the event;has_Archive = code linking to the event’s record in archive;has_freeEntrance = binary value being True if the event is free, False otherwise" ;
+        dct:format       "158 KB" ;
+        dct:identifier   "EV_ETNED"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/76f63366-c26b-42c4-b255-87828fa76e79>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the social event parsed from web pages. The fields considered are: has_eventID = unique identifier for an event (EV_ + title) ;has_title = title of the event ;has_mode = mode of the event (online, offline, blended);has_link = url to the main page of the event ;has_targetAge = specification regarding the target age of an event (string)  ;has_edition = integer value reporting the edition of an event ;has_festivalStatus = binary value being True if the event is a festival, False otherwise;has_language = language of the event reported according to ISO 891-1 ;has_start = string reporting the starting time (date and hour);has_end = string reporting the ending time (date and hour);has_recurrency = binary value being True if the event is recurrent, False otherwise;has_organizer = code linking to the organizer of the event;has_specialAnnouncements = information regarding Covid-19 restrictions ;has_description = description of the event ;has_terminated = binary value being True if the event terminated, False otherwise;has_hashtag = list of keywords;has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise ;has_schedule = specification of the recurrence ;has_transportMode = list of possible (public) transports to reach the event ;has_venue = code linking to the venue of the event ;has_virtualLocation = code linking to the virtual location of the event ;has_superEvent = code linking to the super event of the event   ;has_challenge = = Boolean being True if the event has a challenge, False otherwise;has_happyHour = Boolean being True if the event is an happy hour, False otherwise;has_djSet = Boolean being True if the event has a DJ set, False otherwise;has_season = season specification via string ;has_MusicWork = code linking to a Creative Work ;has_ticket = code linking to the ticket of the event ;has_Archive = code linking to the event’s record in archive ;has_freeEntrance = binary value being True if the event is free, False otherwise " ;
+        dct:format       "74 KB" ;
+        dct:identifier   "EV_ETNSO"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d02275b5-228d-404c-9d2b-3f1b369af751>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the sports event parsed from web pages. The fields considered are: has_eventID = unique identifier for an event (EV_ + title)  has_title = title of the event ;has_mode = mode of the event (online, offline, blended);has_link = url to the main page of the event ;has_targetAge = specification regarding the target age of an event (string)  ;has_edition = integer value reporting the edition of an event ;has_festivalStatus = binary value being True if the event is a festival, False otherwise;has_language = language of the event reported according to ISO 891-1 ;has_start = string reporting the starting time (date and hour);has_end = string reporting the ending time (date and hour);has_recurrency = binary value being True if the event is recurrent, False otherwise;has_organizer = code linking to the organizer of the event;has_specialAnnouncements = information regarding Covid-19 restrictions ;has_description = description of the event ;has_terminated = binary value being True if the event terminated, False otherwise;has_hashtag = list of keywords;has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise ;has_schedule = specification of the recurrence;has_transportMode = list of possible (public) transports to reach the event ;has_venue = code linking to the venue of the event ;has_virtualLocation = code linking to the virtual location of the event ;has_superEvent = code linking to the super event of the event;has_professionalLevel = binary value being True if the event is at professional level, False otherwise;has_paralympicStatus = binary value being True if the event is a Paralympic discipline, False otherwise;has_sport = specifies the type of sport ;has_matchStatus = binary value being True if the event is a match, False otherwise;has_courseStatus = binary value being True if the event is a course, False otherwise;has_team = code linking to the team taking part in the event ;has_needOfMaterials = binary value being True if the event needs extra equipment, False otherwise;has_ticket = code linking to the ticket of the event ;has_Archive = code linking to the event’s record in archive ;has_freeEntrance = binary value being True if the event is free, False otherwise" ;
+        dct:format       "45 KB";
+        dct:identifier   "EV_ETNSP"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/e6875af5-ba33-4db1-a1a6-06a4c14bbdf2>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the tour events parsed from web pages. The fields considered are: has_eventID = unique identifier for an event (EV_ + title) ;has_title = title of the event ;has_mode = mode of the event (online, offline, blended);has_link = url to the main page of the event ;has_targetAge = specification regarding the target age of an event (string)  ;has_edition = integer value reporting the edition of an event ;has_festivalStatus = binary value being True if the event is a festival, False otherwise;has_language = language of the event reported according to ISO 891-1 ;has_start = string reporting the starting time (date and hour);has_end = string reporting the ending time (date and hour);has_recurrency = binary value being True if the event is recurrent, False otherwise;has_organizer = code linking to the organizer of the event;has_specialAnnouncements = information regarding Covid-19 restrictions ;has_description = description of the event ;has_terminated = binary value being True if the event terminated, False otherwise;has_hashtag = list of keywords;has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise ;has_schedule = specification of the recurrence;has_transportMode = list of possible (public) transports to reach the event ;has_venue = code linking to the venue of the event ;has_virtualLocation = code linking to the virtual location of the event ;has_superEvent = code linking to the super event of the event;has_tourStart = dictionary reporting latitude and longitude of the starting point ;has_tourEnd = dictionary reporting latitude and longitude of the starting point ;has_tourIntermediateStops = code linking to intermediate stops of the tour ;has_skillRequirement = specification regarding the required skills ;has_hikingStatus = binary value being True if the event is a hiking excursion, False otherwise;has_map = code linking to the map of the tour ;has_ticket = code linking to the ticket of the event ;has_Archive = code linking to the event’s record in archive ;has_freeEntrance = binary value being True if the event is free, False otherwise" ;
+        dct:format       "75 KB";
+        dct:identifier   "EV_ETNTO"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/dca2d266-7368-4f9d-9943-6e57d46b979e>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing workshops parsed from web pages. The fields considered are: has_eventID = unique identifier for an event (EV_ + title) ;has_title = title of the event ;has_mode = mode of the event (online, offline, blended);has_link = url to the main page of the event ;has_targetAge = specification regarding the target age of an event (string)  ;has_edition = integer value reporting the edition of an event ;has_festivalStatus = binary value being True if the event is a festival, False otherwise;has_language = language of the event reported according to ISO 891-1 ;has_start = string reporting the starting time (date and hour);has_end = string reporting the ending time (date and hour);has_recurrency = binary value being True if the event is recurrent, False otherwise;has_organizer = code linking to the organizer of the event;has_specialAnnouncements = information regarding Covid-19 restrictions ;has_description = description of the event ;has_terminated = binary value being True if the event terminated, False otherwise;has_hashtag = list of keywords;has_distance = binary value being True if the event takes place within 2km from the train station, False otherwise ;has_schedule = specification of the recurrence;has_transportMode = list of possible (public) transports to reach the event ;has_venue = code linking to the venue of the event ;has_virtualLocation = code linking to the virtual location of the event ;has_superEvent = code linking to the super event of the event;has_finalProduct = code linking to the final product of the workshop ;has_materialRequirement = binary value being True if the event requires extra material, False otherwise;has_ticket = code linking to the ticket of the event ;has_Archive = code linking to the event’s record in archive ;has_freeEntrance = binary value being True if the event is free, False otherwise" ;
+        dct:format       "52 KB" ;
+        dct:identifier   "EV_ETNWO"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/68d818e1-8226-4e5d-b90a-967944b45441>
+        rdf:type         skos:Concept ;
+        skos:definition  "An online or virtual location for attending events." ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Virtual Location" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/d44580a7-a68b-460b-8905-c91e9d978b59>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all the virtual locations of the events coming from different sources." ;
+        dct:identifier     "EV_VLO" ;
+        dct:issued         "2021-12-15T18:03:19Z"^^xsd:dateTime ;
+        dct:language      "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>, <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>, <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> , <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>, <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Virtual locations of the events" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dcat:distribution   <https://www.epos-eu.org/epos-dcat-ap#Distribution/2ad4a65d-3218-4bc8-98cb-817e1c612e04>;
+        dcat:keyword       "virtual location" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/68d818e1-8226-4e5d-b90a-967944b45441> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/2ad4a65d-3218-4bc8-98cb-817e1c612e04>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the virtual location of the events. Only three keys are present:  link = url of the virtual room hostingService = name of the web conferencing tool hosting the event has_id = unique identifier of the virtual location created via a VL_+ eventtitle " ;
+        dct:format       "41 KB";
+        dct:identifier   "EV_VLOTN"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB";
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/5f3ae168-9bc1-47b1-8e02-2c79f3749d0b>
+        rdf:type         skos:Concept ;
+        skos:definition  "An artefact that has been brought into existence by someone" ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Creative Work" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/d44580a7-a68b-460b-8905-c91e9d978b59>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all the creative works produced, streamed or played during the events coming from different sources." ;
+        dct:identifier     "EV_VLO" ;
+        dct:issued         "2021-12-15T18:03:19Z"^^xsd:dateTime ;
+        dct:language      "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>, <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>, <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> , <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>, <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Creative Work of the events" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dcat:distribution   <https://www.epos-eu.org/epos-dcat-ap#Distribution/9b5574f7-bab4-45df-94b1-28f220ea86ed>;
+        dcat:keyword       "creative work" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/5f3ae168-9bc1-47b1-8e02-2c79f3749d0b> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/9b5574f7-bab4-45df-94b1-28f220ea86ed>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "ISO/IEC 21778:2017" ;
+        dct:description  "JSON file containing the creative works produced, performed or posted during the events. They are described via: has_id = unique identifier of the creative work created via a CW_ + identifier of the event  ;has_producer = code linking to the producer of the creative work ;has_license = specification of the license ;has_copyright = binary value being True if the creative work is subject to copyright, False otherwise ;has_type = type of creative work ;has_artist = code linking to the artist(s) ;has_durationMin = integer value reporting the duration in minutes requested by a creative work ;has_genre = specifies the genre as string ;has_description = description of the creative work ;has_visualReference = codes linking to other creative works ;has_hashtag = keywords ;has_dimensions = specification of the dimensions via a string" ;
+        dct:format       "205 KB";
+        dct:identifier   "EV_ETNCW"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/6685bcbe-796c-4ddd-8529-5a4a9ef2e0bf>
+        rdf:type         skos:Concept ;
+        skos:definition  "A person (alive, dead, undead, or fictional)." ;
+        skos:inScheme     <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Person" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/d44580a7-a68b-460b-8905-c91e9d978b59>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all people involved in the events gathered from the different sources." ;
+        dct:identifier     "EV_PER" ;
+        dct:issued         "2021-12-15T18:03:19Z"^^xsd:dateTime ;
+        dct:language      "en-GB" , "it-IT";
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>, <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>, <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> , <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>, <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "People involved in the events" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dcat:distribution   <https://www.epos-eu.org/epos-dcat-ap#Distribution/1337d95b-5bbd-46d7-aa2e-2ade8ff9e3ba>;
+        dcat:keyword       "person" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/6685bcbe-796c-4ddd-8529-5a4a9ef2e0bf> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/1337d95b-5bbd-46d7-aa2e-2ade8ff9e3ba>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "RFC 4180" ;
+        dct:description  "CSV " ;
+        dct:format       "205 KB";
+        dct:identifier   "EV_PERTN"^^xsd:anyURI ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI ;
+	epos:annotation  "Any personal information has been disclosed, as reported in the 26th recital of the GDPR. All the information here present are publicly available on the scraped websites or on Open Data Trentino" . 
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/43ead2d3-d797-4949-a91e-5066142260da>
+        rdf:type         skos:Concept ;
+        skos:definition  "A group of people who work together" ;
+        skos:inScheme     <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Organization" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>
+        rdf:type             schema:Organization ;
+        schema:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b> ;
+        schema:identifier    "P.IVA 00337460224" ;
+        schema:legalName     "Provincia Autonoma di Trento" ;
+        schema:leiCode       "P.IVA 00337460224\r\n" ;
+        schema:url           "https://www.provincia.tn.it/#"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "telephone" ;
+        schema:telephone    "tel:0461495111-800903606" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a0b7111f-5bc0-4ee6-a797-04087be816e0>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "File containing data exported from Open Data Trentino service" ;
+        dct:identifier     "EV_OPE" ;
+        dct:language       "it-IT" ;
+        dct:publisher       <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "organisation" ;
+        dct:type           "HTML"^^xsd:anyURI ;
+        dcat:contactPoint   <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/7aab3f72-00b9-4390-8aa8-af9e10cd734b> ;
+        dcat:distribution <https://www.epos-eu.org/epos-dcat-ap#Distribution/61fdc7ab-0741-4292-b866-131cd509ceef> ;
+        dcat:keyword       "organization-in-Trentino" , "open-data-trentino" ;
+        dcat:landingPage   "https://dati.trentino.it/dataset/associazioni-del-comune-di-trento" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/43ead2d3-d797-4949-a91e-5066142260da> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/61fdc7ab-0741-4292-b866-131cd509ceef>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "RFC 4180" ;
+        dct:description  "CSV file containing the associations present within the province of Trento. The fields here present are: has_organizationID = unique identifier randomly generated and having the prefix org_, ;has_name = official name of the organization, ;has_description = short description of the organization ;has_organizationType= type of organization ;has_category = defines the category of the activities promoted by the organization, ;has_hashtag = key-words defining the organization ;has_administrator= identifier of the person responsible of the organization ;has_logo = url to the logo of the organization ;has_foundingYear = founding date of the organization in ISO 8061 (YYYY-01-01) ;has_fiscalCode= fiscal code for noprofit organizations, defined by the directives of the Agenzia delle Entrate and the AA5/6 model.;has_latitude= floating number in reference system WGS 84/UTM 32;has_longitude= floating number in reference system WGS 84/UTM 32;has_contactPoint = identifier for contacting the organization ;has_headquarter  = osm identifier linking to the headquarter of the organization" ;
+        dct:format       "CSV" ;
+        dct:identifier   "EV_OPEOR"^^xsd:anyURI ;
+        dct:issued       "2021-12-07T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI ;
+        epos:annotation  "The original keys of the dataset have been modified, along with some entries about the student organisations that were manually added" . 
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c>
+        rdf:type         skos:Concept ;
+        skos:definition  "An online review of an item - for example, of a restaurant, movie, or store." ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Review" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>
+        rdf:type           schema:Organization ;
+        schema:identifier  "NASDAQ:TRIP" ;
+        schema:legalName   "TripAdvisor " ;
+        schema:leiCode     "NASDAQ:TRIP" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/23122f75-a8a6-4f04-9ac3-42c8f540c0d0>
+        rdf:type           schema:Organization ;
+        schema:identifier  "P.IVA 00340520220" ;
+        schema:legalName   "L’Universitario " ;
+        schema:leiCode     "P.IVA 00340520220" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a591a31a-7b81-4b17-8dd4-5227f22940e4>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "https://tripadvisor.mediaroom.com/in-terms-of-use" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all the reviews scraped from Tripadvisor and L’Universitario";
+        dct:identifier     "EV_REW" ;
+        dct:language       "de-DE" , "en-GB" , "it-IT" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>, <https://www.epos-eu.org/epos-dcat-ap#Organization/23122f75-a8a6-4f04-9ac3-42c8f540c0d0> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+	dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dct:title          "Reviews" ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f> ;
+        dcat:keyword       "Reviews-Trento" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/ef2879e1-beb5-4db2-bc2e-4134b4cd951c> .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b29-f70f-42f2-9777-99c97901f75f>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo  "ISO/IEC 21778:2017" ;
+        dct:description  "A JSON file containing the scraped and parsed reviews. The keys here considered are: has_id = unique identifier to recognize the review, based on a string of RE_ + name of the item reviewed; has_publisher = code linking to the person/profile who published the review ; has_content = content of the review ; has_website = online platform on which the review was posted ; has_date = date of the post (dateTime); has_globalEvaluation = integer ranging from 0 to 10 and expressing the sentiment of the content" ;
+        dct:format       "8 KB" ;
+        dct:identifier   "EV_REWTN"^^xsd:anyURI ;
+        dct:issued       "2021-10-18T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/032f5ad6-2f5a-4092-8f7d-bb76b5cd6b4f>
+        rdf:type         skos:Concept ;
+        skos:definition  "A rating is an evaluation on a numeric scale, such as 1 to 5 stars." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Ranking" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/a591a31a-7b81-4b17-8dd4-5227f22940e4>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Folder containing all the rankings created from scraped reviews";
+        dct:identifier     "EV_RAN" ;
+        dct:language       "en-GB" ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+	dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dct:title          "Rankings" ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/ee10a444-dae6-48aa-a2ad-85fcfb992566> ;
+        dcat:keyword       "Rankings-Trento" ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/032f5ad6-2f5a-4092-8f7d-bb76b5cd6b4f>.
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/ee10a444-dae6-48aa-a2ad-85fcfb992566>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo  "ISO/IEC 21778:2017" ;
+        dct:description  "A JSON file containing the ranking compiled based on the reviews. The keys here considered are: has_id = unique identifier to recognize the ranking, based on a string of RA_+ name of the;has_interactionCounter = integer counting the number of interaction (i.e., likes or dislikes);has_itemEvaluated = code linking to the item evaluated, namely event, facility or organization ;has_review = code linking to the review on which the ranking is complied ;has_publishedOn = name of the web site where the review has been published;	has_ratingValue = overall value as integer" ;
+        dct:format       "8 KB" ;
+        dct:identifier   "EV_RANTN"^^xsd:anyURI ;
+        dct:issued       "2021-10-18T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" ;
+        dct:rights       "CC0" ;
+        dct:type         "JSON"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/70315c99-2b55-44ef-b988-6903e9439650>
+        rdf:type         skos:Concept ;
+        skos:definition  "Physical features that limit or prevent people with disabilities from obtaining the goods or services that are offered." ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "ArchitecturalBarrier" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/7669eb99-fc69-4256-8706-ec7069a82916>
+        rdf:type             schema:Organization ;
+        schema:contactPoint <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b57c20d-a928-480f-86c9-ddf619b8d3fa> ;
+        schema:identifier    "P.IVA 01491510226" ;
+        schema:legalName     "Cooperativa HandiCREA - Sportello Handicap della Provincia di Trento" ;
+        schema:leiCode       "P.IVA 01491510226\r\n" ;
+        schema:url           "https://www.handicrea.it/"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/4b57c20d-a928-480f-86c9-ddf619b8d3fa>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "telephone" ;
+        schema:telephone    "tel:0461-239396" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/2a01ab40-bebf-4612-a1f7-3952f5f135aa>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Description of the accessibility of public spaces within Trento and Rovereto area. This data has been used during the development of the mobile app Trentino Accessibile" ;
+        dct:identifier     "EV_ACC" ;
+        dct:language       "it-IT" , "en-EN" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/7669eb99-fc69-4256-8706-ec7069a82916>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Context Aware - Accessibility" ;
+        dct:type           "CSV"^^xsd:anyURI ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/35ab1970-1018-4341-9b1c-18e6b7ab2e38> ;
+        dcat:keyword       "accessibility places" ;
+        dcat:landingPage   "http://www.contextaware.provincia.tn.it/PortaleCxA/faces/openData.jsp" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/70315c99-2b55-44ef-b988-6903e9439650>.
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/35ab1970-1018-4341-9b1c-18e6b7ab2e38>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "RFC 4180" ;
+        dct:description  "CSV containing selected data from the original Context Aware file. The final variables are therefore defined as: has_ID = unique identifier of the acquisition ;has_officialName = official name of the place of acquisition;has_municipality = name of the municipality of the place;has_province = name of the province of the place;has_country = name of the country of the place ;has_website = link to the website of the place/organization         ;has_latitude = latitude reported in WGS 84/UTM zone 32N;has_longitude = longitude reported in WGS 84/UTM zone 32N;has_elevation = elevation in meters;has_facilityType = type of facility ;has_uploadDate = date of import in ISO 8601        ;has_addr:street = name of the street         ;has_addr:housenumber = number of the house/street  ;has_accessibleElevator = boolean recording whether accessible elevator are present (True) or not (False)         ;has_reservedParkinglots  = boolean recording whether reserved parking lots are present (True) or not (False)        ;has_guidanceSystem = boolean recording whether a guidance system for people with impairments is present (True) or not (False)        ;has_accessibleToilette = boolean recording whether accessible toilets are present (True) or not (False)         ;has_steps = boolean recording whether steps are present (True) or not (False) ;has_ramp = boolean recording whether an external ramp is present (True) or not (False)        ;has_staircaseSlope = description of the staircase, specifying the slope;has_levelOfAccessibility = level of accessibility between no, limited and yes" ;
+        dct:format       "348 KB" ;
+        dct:identifier   "EV_ACCTN" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/63bc2a75-1389-46d4-90ea-f46ace619d57>
+        rdf:type         skos:Concept ;
+        skos:definition  "Territorial units with some government functions and powers, whose jurisdiction covers the area inside their borders." ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "AdministrativeArea" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/a83cfd48-b733-46be-ada5-bcc42435c8db>
+        rdf:type             schema:Organization ;
+        schema:contactPoint <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/c48e9a6a-3f2d-40d1-899a-d08b3dfabc89> ;
+        schema:identifier    "P.IVA 02124831005" ;
+        schema:legalName     "ISTAT - Istituto nazionale di statistica" ;
+        schema:leiCode       "P.IVA 02124831005\r\n" ;
+        schema:url           " https://www.istat.it/"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#ContactPoint/c48e9a6a-3f2d-40d1-899a-d08b3dfabc89>
+        rdf:type            schema:ContactPoint ;
+        schema:contactType  "telephone" ;
+        schema:telephone    "tel:039 06 46731" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/2a01ab40-bebf-4612-a1f7-3952f5f135aa>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC0" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    "Description of the AdministrativeArea" ;
+        dct:identifier     "EV_ADM" ;
+        dct:language        "it-IT" , "de-DE", "sl-SL";
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/a83cfd48-b733-46be-ada5-bcc42435c8db>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          "Context Aware - Accessibility" ;
+        dct:type           "XLSX"^^xsd:anyURI ;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/7128a404-b1f1-4718-9f2d-39dc55f58629> ;
+        dcat:keyword       "Italian municipalities" ;
+        dcat:landingPage   "https://www.istat.it/it/archivio/6789" ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/63bc2a75-1389-46d4-90ea-f46ace619d57>.
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/7128a404-b1f1-4718-9f2d-39dc55f58629>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "XLSX" ;
+        dct:description  "XLSX file containing the ISTAT nomenclature of Italian municipalities. The variables defined are: Codice Regione = code of the region  ;Codice dell'Unità territoriale sovracomunale (valida a fini statistici) = extra territorial code useful for statistics;Codice Provincia (Storico) = code of the province ;Progressivo del comune = progressive number of the municipality;Codice Istat del Comune (alfanumerico) = Istat code for the municipality (alphanumeric format);Codice Istat del Comune (numerico) = Istat code for the municipality (numeric format);Denominazione (italiana e straniera) = name in Italian and foreign language ;Denominazione in italiano = name of the municipality in Italian  ;Denominazione altra lingua = name of the municipality in a foreign language ;Codice Ripartizione Geografica = code of macroregions between 1-5;Ripartizione Geografica = name of the macroregion;Denominazione Regione  = name of the region ;Denominazione dell'Unità territoriale sovracomunale (valida a fini statistici) = name of the extra territorial area ;Tipologia di Unità territoriale sovracomunale = type of the extra territorial area between 1-5 (1=Provincia; 2=Provincia autonoma; 3=Città metropolitana; 4=Libero consorzio di comuni; 5=Unità non amministrativa);Flag Comune capoluogo di provincia/città metropolitana/libero consorzio = binary value reporting 1 if chief town, 0 otherwise.;Sigla automobilistica = serial number ;Codice Comune numerico con 110 province (dal 2010 al 2016) = Istat code before changes of 2016 ;Codice Comune numerico con 107 province (dal 2006 al 2009) = Istat code before changes 2009 ;Codice Comune numerico con 103 province (dal 1995 al 2005) = Istat code before changes 2005;Codice catastale del comune = code of the agenzia del Territorio;Codice NUTS1 2010 = European code segmenting Italy in macroregions ;Codice NUTS2 2010 = European code segmenting Italy in regions ;Codice NUTS3 2010 = European code segmenting Italy in provinces;NUTS1 2021 = European code segmenting Italy in macroregions;NUTS2 2021 = European code segmenting Italy in regions;NUTS3 2021= European code segmenting Italy in provinces" ;
+        dct:format       "1.2 MB" ;
+        dct:identifier   "EV_ADMTN" ;
+        dct:type         "XLSX"^^xsd:anyURI ;
+        dcat:accessURL   "https://www.istat.it/it/archivio/6789"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/df0cb73d-2e87-4574-acf5-ea52833117c1>
+        rdf:type         skos:Concept ;
+        skos:definition  "Entities that have a somewhat fixed, physical extension." ;
+        skos:inScheme      <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601> ;
+        skos:prefLabel   "Place" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Organization/8d122b00-664a-4b90-a2bb-87b5ed9ca551>
+        rdf:type           schema:Organization ;
+        schema:identifier  "05599740965 " ;
+        schema:legalName   "Openstreetmap" ;
+        schema:leiCode     "05599740965 " .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/b19c624e-c744-4b42-b2a4-558ddf245629>
+        rdf:type           dcat:Dataset ;
+        dct:description    "Reports information about the facilities, their accessibility and usage. The information were retrieved from OpenStreetMap, via the tags: facility, amenity, tourism, leisure, and were further parsed" ;
+        dct:identifier     "EV_OSM" ;
+        dct:title          "Places of Trentino" ;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:type           "GeoJSON"^^xsd:anyURI ;
+        dcat:theme         <https://www.epos-eu.org/epos-dcat-ap#Concept/df0cb73d-2e87-4574-acf5-ea52833117c1>;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/d4f0625d-74a6-468b-92d0-32a6cffca8b3> , <https://www.epos-eu.org/epos-dcat-ap#Distribution/b4a0ceaf-c33b-4c06-a5a3-556847a958a2>;
+        dcat:keyword       "OpenStreetMap" . 
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/d4f0625d-74a6-468b-92d0-32a6cffca8b3>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "RFC 4180" ;
+        dct:description  "CSV file containing pairs of unique OMS and key words for each facility such as Bars, universities or Hostels. The specific fields follow:has_latitude = latitude reported in WGS 84/UTM zone 32N;has_longitude = longitude reported in WGS 84/UTM zone 32N;opening_hours = opening hours of the facility reported as string;facility_type = category of facility ;architecturalBarriers = code linking to the architectural barriers of the facility ;name = official name of the facility (in Italian) ;sport = specification regarding the sport played, if any ;has_capacity = int reporting the maximum number of people allowed ;menu = specification regarding the menu offered, if any ;hiking = binary variable reporting whether the facility is related with hiking (True) or not (False);has_osmID = unique identifier defined by OpenStreetMap;has_contactPoint = code linking to the contact point of the facility" ;
+        dct:format       "257 KB" ;
+        dct:identifier   "EV_OSMFA" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/b4a0ceaf-c33b-4c06-a5a3-556847a958a2>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   "RFC 4180" ;
+        dct:description  "CSV file containing the locations of the facilities hereby considered. It is defined by the following attributes: city = city of reference ;Country = country code ;Housenumber = number of the house/street ;Postcode = official zip number used by the national postal service (Poste Italiane) ;Street = name of the region ;Region= name of the region ;has_latitude = latitude reported in WGS 84/UTM zone 32N;has_longitude= longitude reported in WGS 84/UTM zone 32N;has_province= name of the province ;has_administrativeArea = ISTAT code of the municipality " ;
+        dct:format       "134 KB" ;
+        dct:identifier   "EV_OSMLO" ;
+        dct:type         "CSV"^^xsd:anyURI ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
+
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/3f352163-5c61-4996-90a9-028356f9420e>
+        rdf:type         dcat:Dataset ;
+        dct:description  "Knowledge resource : Schema.org vocabulary can be used with many different encodings, including RDFa, Microdata and JSON-LD. These vocabularies cover entities, relationships between entities and actions, and can easily be extended through a well-documented extension model." ;
+        dct:identifier   "KN_SCHE" ;
+        dct:title        "schema.org" ;
+        dcat:keyword     "knowledge - schema" .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/ccb361ef-12f4-43cb-9d88-08cb90e33fb6>
+        rdf:type         dcat:Dataset ;
+        dct:description  "The ontology currently covers 768 classes which form a subsumption hierarchy and are described by 3000 different properties. The DBpedia Ontology currently contains about 4,233,000 instances" ;
+        dct:identifier   "KN_DBPD" ;
+        dct:title        "dbpedia.org" ;
+        dcat:keyword     "knowledge - dbpedia" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/5c80f4a6-95c1-4d36-9d55-4a9511ab5601>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond." ;
+        dct:title        "schema.org" .
+
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/29137f90-53cc-4fe9-ac51-470293b2d63c>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The Americans with Disabilities Act (ADA) prohibits discrimination against people with disabilities in several areas, including employment, transportation, public accommodations, communications and access to state and local government' programs and services." ;
+        dct:title        "ADA.gov" .
+<https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/956d399d-f78a-48b6-6fd5-dd4a815a9a43>
+        rdf:type         skos:ConceptScheme ;
+        dct:description  "The International Council on Archives (ICA) is dedicated to the effective management of records and the preservation, care and use of the world's archival heritage through its representation of records and archive professionals across the globe." ;
+        dct:title        “ICA - International Council on Archives” .
+
+<https://www.epos-eu.org/epos-dcat-ap#Concept/8dab69ff-4fef-412a-8fa6-3a501ef54a21>
+        rdf:type         skos:Concept ;
+        skos:definition  "Archives are the documentary by-product of human activity retained for their long-term value." ;
+        skos:inScheme    <https://www.epos-eu.org/epos-dcat-ap#ConceptScheme/956d399d-f78a-48b6-6fd5-dd4a815a9a43>;
+        skos:prefLabel   “Archive” .
+
+<https://www.epos-eu.org/epos-dcat-ap#Dataset/956d399d-f59a-48b6-9fd5-dd4a815a9a43>
+        rdf:type           dcat:Dataset ;
+        dct:accessRights   "CC" ;
+        dct:conformsTo     "W3C" ;
+        dct:description    “Folder containing all the files regarding archived events.” ;
+        dct:identifier     “EV_ARC” ;
+        dct:issued         "2021-12-15T18:03:19Z"^^xsd:dateTime ;
+        dct:language       "it-IT" , "en-GB" ;
+        dct:publisher      <https://www.epos-eu.org/epos-dcat-ap#Organization/2e9997b9-9a52-4012-8eea-0669486f8846>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/5ad8b6c3-bee3-4a3e-87ce-3ceb5accf09e>, <https://www.epos-eu.org/epos-dcat-ap#Organization/8face2dd-8dcc-4358-add4-6c90b51b5a53>,  <https://www.epos-eu.org/epos-dcat-ap#Organization/c9c83f4b-eb65-488d-9d79-46a7df2d46d5>, <https://www.epos-eu.org/epos-dcat-ap#Organization/24eac023-5ef1-4016-8f36-1dc53491e4fc> ;
+        dct:spatial        <https://www.epos-eu.org/epos-dcat-ap#Location/d0296031-0be8-45ac-afa9-816a8c0a71bf> , <https://www.epos-eu.org/epos-dcat-ap#Organization/92a108c4-d9db-42e9-9d0c-2aa682778919>, <https://www.epos-eu.org/epos-dcat-ap#Organization/9f91fd18-aabd-4905-b1ba-507a8a461c00>;
+        dct:temporal       <https://www.epos-eu.org/epos-dcat-ap#PeriodOfTime/13f8ea6b-203c-403a-9c15-9aad3b797b12> ;
+        dct:title          “Archived events in Trentino” ;
+        dct:type           "HTML" ;
+        dcat:contactPoint  <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/49ca963e-9e2d-4ba1-a1e7-bdc53bbcf37b>, <https://www.epos-eu.org/epos-dcat-ap#ContactPoint/720797b4-ac51-496e-8987-86aea2f3081d>;
+        dcat:distribution  <https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b63-f70f-42f2-9777-99c97901f75f>;
+        dcat:keyword       “archive” ;
+        dcat:landingPage   "https://github.com/LuciaHrovatin/KDI_project.git" ;
+        dcat:theme        <https://www.epos-eu.org/epos-dcat-ap#Concept/8dab69ff-4fef-412a-8fa6-3a501ef54a21> .
+
+
+
+<https://www.epos-eu.org/epos-dcat-ap#Distribution/46c65b63-f70f-42f2-9777-99c97901f75f>
+        rdf:type         dcat:Distribution ;
+        dct:conformsTo   “ISO/IEC 21778:2017" ;
+        dct:description  “JSON file containing the archived events parsed from web pages. The fields considered are: has_event = code linking to the event whose record is about , has_comment = code linking to any review of the archived event, has_hashtag = strings reporting the keywords of the recorded file, has_importDate = date of import in ISO 8601, has_id = unique identifier of each file in the archive, composed by AR_ + code event " ;
+        dct:format       “544 Bytes”;
+        dct:identifier   "EV_ARCTN” ;
+        dct:issued       "2021-12-15T14:07:44Z"^^xsd:dateTime ;
+        dct:language     "en-GB" , "it-IT" ;
+        dct:rights       "CC0" ;
+        dct:type         “JSON" ;
+        dcat:accessURL   "https://github.com/LuciaHrovatin/KDI_project.git"^^xsd:anyURI .
