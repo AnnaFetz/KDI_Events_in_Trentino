@@ -73,9 +73,10 @@ Data regarding events coming from crushsite, stayhappening, tripadvisor, dati tr
 
 ### ER description
 
+![ER model](https://github.com/AnnaFetz/KDI_Events_in_Trentino/blob/main/Teleologies/Informal%20Modeling/er.png)
+
 The building process of the ER was intended to resemble a real query on the final service. Thus, below an explanation of the intended hierarchy.
-<li> Common objects were mainly considered to be existence-independent as they are uniquely identified by their attributes, and do not depend on other entity. Thanks to their
-generic representation and vast usage, they could be used for a (future) broader DoI.</li><br> 
+<li> Common objects were mainly considered to be existence-independent as they are uniquely identified by their attributes, and do not depend on other entity. Thanks to their generic representation and vast usage, they could be used for a (future) broader DoI.</li><br> 
 <li> Core objects represent purpose-specific entities, such as the event type, main actors (e.g., Student) or specific facilities. According to the intended output, core objects mirror the infrastructure of the filtering system of the website. Specifically, these entities should direct the initial query and skim all the events not matching preferences. For instance, if a specific place is selected, the output will list only events taking place there.</li><br>
 <li> Contextual objects were thought of being a further specification provided by the user to obtain a narrower list of events matching all criteria. For instance, the user would use location-specific keywords when searching for a specific set of events (e.g., Concerts in Trento's Doss).</li><br>
 <li>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main
@@ -104,7 +105,6 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 		communication services, such as Zoom and Google Meet; </li><br>
 	<li> Blended or Hybrid events offer an offline or online attendance depending on the participant's
 		needs and possibilities. </li><br>
-</ol><br> 
 <li> CreativeWork gathers all human artifacts produced during an activity or employed in an event. The properties for each sub-class have been extracted by benchmarking other services, for example:</li>
 	<ol>
 	<li> Track follows the audio features returned by the SpotifyAPI. </li><br>
@@ -142,7 +142,6 @@ Please notice that due to timing some further changes were applied. Reference ER
 
 <li> FINAL ETG : https://github.com/AnnaFetz/KDI_Events_in_Trentino/tree/main/Teleologies/Formal%20Modeling </li>
 <li> FINAL KG : https://github.com/AnnaFetz/KDI_Events_in_Trentino/tree/main/Datasets/Data%20Integration </li>
-
 
 <b>NOTE:</b> please note that the final KG is split between Entities RDF Files, due to some last-minute changes. <br>
 
