@@ -1,20 +1,24 @@
-## Events in Trentino 
-### Knowledge and Data Integration Course 
-### Academic year 2021/2022, MSc Data Science, University of Trento
+## <p align="center"> Events in Trentino </p>
+### <p align="center"> Knowledge and Data Integration </p>
+#### <p align="center">	MSc Data Science </p>
+#### <p align="center">	A.Y. 2021/2022 - University of Trento </p>
 
 ----
-### Material 
-Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
-Link to [Project personal repo](https://github.com/LuciaHrovatin/KDI_project/tree/main)
 
 ### Project's Description
+The project aimed at deploying a Knowledge Graph about the **Event** domain and, specifically, the **University Student Life**. The (iTelos)[https://www.researchgate.net/publication/351744853_iTelos-_Building_reusable_knowledge_graphs] procedure has been followed:
 
-Project's scope intersects the **Event** domain with the **University Student Life**. 
+![iTelos](itelos.png)
 
 Due to the placement of University of Trento's departments, the spatial coverage includes only the municipalities of Trento and Rovereto. <br>
 Temporally, the project targets the 2019-2022 timespan, which aims at detecting and modelling the changes that occurred due to the Covid-19 pandemic in event organization and participation.<br>
 
 The final deliverable should correspond to a website acting as a collective memory of a specific administrative area. The target users are university students, who interact with the service, standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals), and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures.
+
+
+### Material 
+Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
+Link to [Project personal repo](https://github.com/LuciaHrovatin/KDI_project/tree/main)
 
 ### Resources
 #### Knowledge Resources:
