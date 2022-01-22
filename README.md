@@ -106,7 +106,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> <b>CreativeWork</b> gathers all human artifacts produced during an activity or employed in an event.</li><br>   
 <li> To satisfy the necessity of a memory, the ER model integrates an <b>Archive</b> entity too, aiming at keeping track of events' past history.</li><br>
 <li> A final remark regards the creation of the <b>ArchitecturalBarriers</b> entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
-Please notice that due to timing some further changes were applied. Reference ER can be found in the project's [report](https://github.com/AnnaFetz/KDI_Events_in_Trentino/blob/501f29e386902e9fe49a0017f960cfb3a8b4c351/Documentation/FinalReport.pdf).<br>
+Please notice that due to timing some further changes were applied. Reference ER can be found in the project's report.
 </ol><br> 
 
 ### ETG description
