@@ -1,20 +1,24 @@
-## Events in Trentino 
-### Knowledge and Data Integration Course 
-### Academic year 2021/2022, MSc Data Science, University of Trento
+## <p align="center"> Events in Trentino </p>
+### <p align="center"> Knowledge and Data Integration </p>
+#### <p align="center">	MSc Data Science </p>
+#### <p align="center">	A.Y. 2021/2022 - University of Trento </p>
 
 ----
-### Material 
-Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
-Link to [Project personal repo](https://github.com/LuciaHrovatin/KDI_project/tree/main)
 
 ### Project's Description
+The project aimed at deploying a Knowledge Graph about the **Event** domain and, specifically, the **University Student Life**. The [iTelos](https://www.researchgate.net/publication/351744853_iTelos-_Building_reusable_knowledge_graphs) procedure has been followed:
 
-Project's scope intersects the **Event** domain with the **University Student Life**. 
+![iTelos](itelos.png)
 
 Due to the placement of University of Trento's departments, the spatial coverage includes only the municipalities of Trento and Rovereto. <br>
 Temporally, the project targets the 2019-2022 timespan, which aims at detecting and modelling the changes that occurred due to the Covid-19 pandemic in event organization and participation.<br>
 
 The final deliverable should correspond to a website acting as a collective memory of a specific administrative area. The target users are university students, who interact with the service, standing as both <i>short-term memory</i> (i.e., working memory) and <i>long-term memory</i>, specifically episodic. While the former function filters the future events by location, duration, target age, personal interests, event category (e.g., music, shows, festivals), and secondary attributes (e.g., language, price), the latter retrieves relevant information about past events. This option focuses mainly on the event's description, tags, ranking, comments, and pictures.
+
+
+### Material 
+Link to [Official course repo](https://github.com/AnnaFetz/KDI_Events_in_Trentino)<br>
+Link to [Project personal repo](https://github.com/LuciaHrovatin/KDI_project/tree/main)
 
 ### Resources
 #### Knowledge Resources:
@@ -84,18 +88,17 @@ The building process of the ER was intended to resemble a real query on the fina
 <li> <b>Common objects</b> were mainly considered to be existence-independent as they are uniquely identified by their attributes, and do not depend on other entity. Thanks to their generic representation and vast usage, they could be used for a (future) broader DoI.</li><br> 
 <li> <b>Core objects</b> represent purpose-specific entities, such as the event type, main actors (e.g., Student) or specific facilities. According to the intended output, core objects mirror the infrastructure of the filtering system of the website. Specifically, these entities should direct the initial query and skim all the events not matching preferences. For instance, if a specific place is selected, the output will list only events taking place there.</li><br>
 <li> <b>Contextual objects</b> were thought of being a further specification provided by the user to obtain a narrower list of events matching all criteria. For instance, the user would use location-specific keywords when searching for a specific set of events (e.g., Concerts in Trento's Doss).</li><br>
-<li>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main entities (i.e., superclasses).</li><br>
+
+The main event's type (i.e., categories) identified are the following:
 	
-As stated above, the ER model has been structured following the future website's filters and its focus on searching for events, as other websites already do. The main event's type (i.e., categories) identified are the following:
-	
-<li><b>Social Events</b>: lead to a socialization process (i.e., people forming groups) and present repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour. </li><br>
+<li><b>Social Events</b>: lead to a socialization process (i.e., people forming groups) and present repeated actions, such as drinking or dancing. A prototypical example is Happy Hour. </li><br>
 <li> <b>Education Events</b>: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.</li><br>
 <li> <b>Workshop</b>: umbrella term for any laboratory event that actively involves the participants and delivers a tangible result (i.e., product), or breaks new skills.</li><br>
 <li> <b>Cultural Events</b>: knowing that cultural has a broad meaning, within this project, an event is defined as cultural if it is designed for entertainment and enjoyment and is related to some branch of art, culture, or local values (i.e., performing arts, musicals, photography, and literature). The definition here adopted partially resembles the DutchCulture Database structure as it is consistent with the project's purpose.</li><br>
 <li><b>Tour</b>: traveling means going from one place to another. Whereas the event's types above may be represented as happening at a specific time and in a static space, a tour event involves both a movement and some personal interests. </li><br>
 <li><b>Sports Events</b>: organized occasions where a sports or exercise activity is performed at a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,	and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors.</li><br>
 		
-While the Covid-19 pandemic did not particularly impact the events' categories, it constraints and modifies the concept of location. Thus, three scenarios are possible:
+While the Covid-19 pandemic did not particularly impact the events' categories, it modified the concept of *location*. Thus, three scenarios are possible:
 <ol>
 	<li> Offline events have a location traditionally defined as an identifiable point in the two (or
 		three) dimensional space; </li><br>
@@ -106,7 +109,7 @@ While the Covid-19 pandemic did not particularly impact the events' categories, 
 <li> <b>CreativeWork</b> gathers all human artifacts produced during an activity or employed in an event.</li><br>   
 <li> To satisfy the necessity of a memory, the ER model integrates an <b>Archive</b> entity too, aiming at keeping track of events' past history.</li><br>
 <li> A final remark regards the creation of the <b>ArchitecturalBarriers</b> entity that enlarges the plethora of users and increases the quality of the final service. The information delivered focuses on the event's venue (and transport) and its accessibility. Due to the lack of standardization in this field, these properties comply with the Italian legislation DM 236/89. </li><br>
-Please notice that due to timing some further changes were applied. Reference ER can be found in the project's [report](https://github.com/AnnaFetz/KDI_Events_in_Trentino/blob/501f29e386902e9fe49a0017f960cfb3a8b4c351/Documentation/FinalReport.pdf).<br>
+Please notice that due to timing some further changes were applied. Reference ER can be found in the project's report.
 </ol><br> 
 
 ### ETG description
