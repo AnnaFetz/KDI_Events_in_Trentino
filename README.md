@@ -6,7 +6,7 @@
 ----
 
 ### Project's Description
-The project aimed at deploying a Knowledge Graph about the **Event** domain and, specifically, the **University Student Life**. The (iTelos)[https://www.researchgate.net/publication/351744853_iTelos-_Building_reusable_knowledge_graphs] procedure has been followed:
+The project aimed at deploying a Knowledge Graph about the **Event** domain and, specifically, the **University Student Life**. The [iTelos](https://www.researchgate.net/publication/351744853_iTelos-_Building_reusable_knowledge_graphs) procedure has been followed:
 
 ![iTelos](itelos.png)
 
