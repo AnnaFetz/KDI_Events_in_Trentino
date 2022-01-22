@@ -88,18 +88,17 @@ The building process of the ER was intended to resemble a real query on the fina
 <li> <b>Common objects</b> were mainly considered to be existence-independent as they are uniquely identified by their attributes, and do not depend on other entity. Thanks to their generic representation and vast usage, they could be used for a (future) broader DoI.</li><br> 
 <li> <b>Core objects</b> represent purpose-specific entities, such as the event type, main actors (e.g., Student) or specific facilities. According to the intended output, core objects mirror the infrastructure of the filtering system of the website. Specifically, these entities should direct the initial query and skim all the events not matching preferences. For instance, if a specific place is selected, the output will list only events taking place there.</li><br>
 <li> <b>Contextual objects</b> were thought of being a further specification provided by the user to obtain a narrower list of events matching all criteria. For instance, the user would use location-specific keywords when searching for a specific set of events (e.g., Concerts in Trento's Doss).</li><br>
-<li>With concerns to actions, they mostly were intentionally not defined as entities. They have been integrated as either properties or bidirectional relationships between main entities (i.e., superclasses).</li><br>
+
+The main event's type (i.e., categories) identified are the following:
 	
-As stated above, the ER model has been structured following the future website's filters and its focus on searching for events, as other websites already do. The main event's type (i.e., categories) identified are the following:
-	
-<li><b>Social Events</b>: lead to a socialization process (i.e., people forming groups) and present repeated actions, such as drinking or dancing. A prototypical example is a Happy Hour. </li><br>
+<li><b>Social Events</b>: lead to a socialization process (i.e., people forming groups) and present repeated actions, such as drinking or dancing. A prototypical example is Happy Hour. </li><br>
 <li> <b>Education Events</b>: (academic) prearranged meetings for consultation, exchange of information, or discussion. The audience might be not actively involved.</li><br>
 <li> <b>Workshop</b>: umbrella term for any laboratory event that actively involves the participants and delivers a tangible result (i.e., product), or breaks new skills.</li><br>
 <li> <b>Cultural Events</b>: knowing that cultural has a broad meaning, within this project, an event is defined as cultural if it is designed for entertainment and enjoyment and is related to some branch of art, culture, or local values (i.e., performing arts, musicals, photography, and literature). The definition here adopted partially resembles the DutchCulture Database structure as it is consistent with the project's purpose.</li><br>
 <li><b>Tour</b>: traveling means going from one place to another. Whereas the event's types above may be represented as happening at a specific time and in a static space, a tour event involves both a movement and some personal interests. </li><br>
 <li><b>Sports Events</b>: organized occasions where a sports or exercise activity is performed at a specific location in a temporal interval. Most sports events are also part of bigger meetings and competitions. They can be periodically organised, such as the Facoltiadi or a sports course (i.e., dance course). Depending on the disciplines, schedule, competitors,	and scope (e.g., tournaments, leagues, fundraising), the events may embed different descriptors.</li><br>
 		
-While the Covid-19 pandemic did not particularly impact the events' categories, it constraints and modifies the concept of location. Thus, three scenarios are possible:
+While the Covid-19 pandemic did not particularly impact the events' categories, it modified the concept of *location*. Thus, three scenarios are possible:
 <ol>
 	<li> Offline events have a location traditionally defined as an identifiable point in the two (or
 		three) dimensional space; </li><br>
